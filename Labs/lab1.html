@@ -7,9 +7,9 @@
 <style>
   form {
     display: flex;
-    flex-direction: column; /* stack children vertically */
-    gap: 10px; /* adds space between each field */
-    max-width: 400px; /* optional, to keep the form narrow */
+    flex-direction: column; 
+    gap: 10px; 
+    max-width: 400px; 
   }
 
   label {
@@ -22,7 +22,7 @@
   input[type="date"],
   select {
     padding: 8px;
-    width: 100%; /* makes inputs full width of form */
+    width: 100%; 
     box-sizing: border-box;
   }
 
@@ -34,6 +34,66 @@
     margin-top: 10px;
     padding: 10px;
   }
+
+ 
+  body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    min-height: 100vh;     
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    width: 400px; 
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+
+
 </style>
 
 
@@ -64,9 +124,8 @@
 <label for="password">Password:</label> 
 <input type="password" id="password" name="password" required>
 
-
-<input type="confirmpassword" id="confirmpassword" name="confirmpassword" required>
 <label for ="confirmpassword">Confirm Password:</label>
+<input type="confirmpassword" id="confirmpassword" name="confirmpassword" required>
 
 
 <label for="dob">Date of Birth:</label>
