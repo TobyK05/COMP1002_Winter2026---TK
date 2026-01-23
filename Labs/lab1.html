@@ -15,19 +15,58 @@
 <form action="#" method="post">
 
 </form>
-    <label for="fullname">Full Name:</label> <label for="lastname">Last Name:</label>
-<input type="text" id="fullname" name="fullname" required><input type="text" id="lastname" name="lastname" required>
+    
+<label for="fullname">Full Name:</label> 
+<input type="text" id="fullname" name="fullname" required>
+
+
+<label for="lastname">Last Name:</label>
+<input type="text" id="lastname" name="lastname" required>
+
 
 <label for="email">Email:</label>
 <input type="email" id="email" name="email" required>
-    
-<label for="password">Password:</label> <label for ="confirmpassword">Confirm Password:</label>
-<input type="password" id="password" name="password" required><input type="confirmpassword" id="confirmpassword" name="confirmpassword" required>
+  
+<label for="password">Password:</label> 
+<input type="password" id="password" name="password" required>
+
+
+<input type="confirmpassword" id="confirmpassword" name="confirmpassword" required>
+<label for ="confirmpassword">Confirm Password:</label>
+
 
 <label for="dob">Date of Birth:</label>
 <input type="date" id="dob" name="dob" required>
 
 
+<label>
+    <input type="radio" name="gender" value="male">
+    Male
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="female">
+    Female
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="other">
+    Other
+  </label>
+
+<label for="country">Country of Origin:</label>
+<select id="country" name="country">
+  <option value="">--Please choose--</option>
+  <option value="us">United States</option>
+  <option value="ca">Canada</option>
+  <option value="uk">United Kingdom</option>
+  <option value="au">Australia</option>
+  <option value="in">India</option>
+  <option value="other">Other</option>
+</select>
+
+
+<button type="submit">Register</button>
 
 </main>
    
