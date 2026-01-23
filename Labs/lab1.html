@@ -6,40 +6,46 @@
    
 <style>
   body {
-    display: flex; 
-    justify-content: center; 
-    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    min-height: 100vh;       /* full viewport height */
+    background-color: #f0f0f0; /* page background */
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 50px 0; 
   }
 
-  
-  main {
-    width: 100%;
-    max-width: 500px; 
-  }
-
-  
-  header {
-    text-align: center; 
-    margin-bottom: 30px; 
-  }
-
-  
+  /* Form styling */
   form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 30px;
-    background-color: white; 
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: none; 
+    gap: 12px;
+    padding: 40px;
+    background-color: white; /* paper look */
+    border-radius: 12px;
+    width: 600px; /* wider form */
+    box-shadow: none; /* remove shadow */
+    text-align: center; /* center header inside form */
+  }
+
+  /* Header inside form */
+  form h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  form p {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #555;
   }
 
   label {
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left; /* keep labels aligned left */
   }
 
   input[type="text"],
@@ -59,13 +65,14 @@
   }
 
   button {
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 15px;
+    padding: 12px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
   }
 
   button:hover {
