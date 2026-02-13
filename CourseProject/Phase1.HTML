@@ -4,134 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <title>Toby Koladich | Portfolio</title>
-    
+
+    <!-- Internal CSS -->
     <style>
-       
-    /* Phase 1 reflection
-   When working on phase one of the course project there were definitely some parts that were 
-   easier than others. For example adding a form to the bottom of the page was fairly easy as 
-   we've done that before and I could just take inspiration from my previous projects. When it 
-   comes to something that I found challenging, it was for sure the styling done is CSS. I have 
-   struggled with it when it comes to previous assignments, and this one was no exception. But 
-   that being said, having done it previously, I was able to navigate it and figure it out and 
-   I feel I am getting better at it every time it's required. 
+        /* 
+        Phase 1 Reflection:
+       When working on phase one of the course project there were definitely 
+       some parts that were easier than others. For example adding a form to 
+       the bottom of the page was fairly easy as we've done that before and I 
+       could just take inspiration from my previous projects. When it comes to 
+       something that I found challenging, it was for sure the styling done is 
+       CSS. I have struggled with it when it comes to previous assignments, and 
+       this one was no exception. But that being said, having done it previously, 
+       I was able to  navigate it and figure it out and I feel I am getting better 
+       at it every time it's required. When it comes to Phase two of the project I 
+       am definitely excited to expand on the design of the page and continue to 
+       get better at it as the semester goes on. What I was able to come up with for 
+       phase one was rather basic and I know I can create interesting and better 
+       designs for projects.
+        */
 
-   
-    When it comes to Phase two of the project I am definitely excited to expand on the design 
-   of the page and continue to get better at it as the semester goes on. What I was able to 
-   come up with for phase one was rather basic and I know I can create interesting and better 
-   designs for projects.
+        /* Element selector */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fa;
+        }
 
-    */
-      
-    
-    
-    /* Element Selector */
-       body {
-           font-family: Arial, sans-serif;
-           margin: 0;
-           background-color: #f4f7fa;
-       }
+        /* Descendant selector */
+        nav ul {
+            list-style: none;
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            margin: 0;
+        }
 
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-       /* Descendant Selector */
-       nav ul {
-           list-style: none;
-           background-color: #333;
-           padding: 15px;
-           text-align: center;
-           margin: 0;
-       }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
+        /* Pseudo-class selector */
+        nav ul li a:hover {
+            color: #4da6ff;
+        }
 
-       nav ul li {
-display: inline;
-           margin: 0 15px;
-       }
+        /* ID selector */
+        #about {
+            background-color: #e6f2ff;
+        }
 
+        /* Element selector */
+        section {
+            padding: 40px;
+        }
 
-       nav ul li a {
-           color: white;
-           text-decoration: none;
-           font-weight: bold;
-       }
+        img {
+            display: block;
+            margin: 0 auto 20px auto; /* center image horizontally */
+            border-radius: 50%; /* optional: circular image */
+            width: 200px;
+        }
 
+        /* Form Styling */
+        form {
+            max-width: 400px;
+            margin: 0 auto; /* center form */
+        }
 
-       /* Pseudo-class Selector */
-       nav ul li a:hover {
-           color: #4da6ff;
-       }
+        input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
 
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
 
-       /* ID Selector */
-       #about {
-           background-color: #e6f2ff;
-       }
+        button:hover {
+            background-color: #4da6ff;
+        }
 
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 
-       /* Element Selector */
-       section {
-           padding: 40px;
-       }
-
-
-       img {
-           display: block;
-           margin-bottom: 20px;
-       }
-
-
-       /* Form Styling */
-       form {
-           max-width: 400px;
-       }
-
-
-       input, textarea {
-           display: block;
-           width: 100%;
-           margin-bottom: 15px;
-           padding: 8px;
-       }
-
-
-       button {
-           background-color: #333;
-           color: white;
-           padding: 10px;
-           border: none;
-           cursor: pointer;
-       }
-
-
-       button:hover {
-           background-color: #4da6ff;
-       }
-
-
-       footer {
-       text-align: center;
-           padding: 15px;
-           background-color: #333;
-           color: white;
-       }
-
-
-   </style>
-        
-    
+    <!-- External CSS (optional, can merge with internal CSS) -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- ========================= -->
     <!-- Header & Navigation -->
-    <!-- ========================= -->
     <header>
         <nav>
             <ul>
-                <!-- Internal page links -->
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -140,19 +123,16 @@ display: inline;
     </header>
 
     <main>
-
-        <!-- ========================= -->
         <!-- ABOUT SECTION -->
-        <!-- ========================= -->
         <section id="about">
             <h1>About Me</h1>
 
             <!-- Profile Image -->
-            <img src="images/profile.jpg" alt="Photo of Myself" width="200">
+            <img src="images/profile.jpg" alt="Photo of Myself">
 
-            <!-- Paragraph About You -->
+            <!-- Paragraph About Me -->
             <p>
-                Hello, my name is Toby Koladich. I am a current student at Georgian college studying computer programming. 
+                Hello, my name is Toby Koladich. I am a current student at Georgian College studying computer programming. 
                 My skills include coding in various languages like HTML, CSS, Arduino, and C#. I also enjoy playing and 
                 am very skilled at volleyball playing for the varsity team for the school.
             </p>
@@ -168,9 +148,7 @@ display: inline;
             </ul>
         </section>
 
-        <!-- ========================= -->
         <!-- PROJECTS SECTION -->
-        <!-- ========================= -->
         <section id="projects">
             <h1>Projects</h1>
 
@@ -184,63 +162,40 @@ display: inline;
                 <li>Arduino Light Sensor System</li>
             </ul>
 
-            <!-- External Link to GitHub -->
             <p>
                 Visit my GitHub profile:
-                <a href="https://github.com/TobyK05/TobyK05.git" target="_blank">
-                    GitHub Portfolio
-                </a>
+                <a href="https://github.com/TobyK05/TobyK05.git" target="_blank">GitHub Portfolio</a>
             </p>
         </section>
 
-        <!-- ========================= -->
         <!-- CONTACT SECTION -->
-        <!-- ========================= -->
         <section id="contact">
             <h1>Contact Me</h1>
-                 <p>  Toby.Koladich@gmail.com   </p>
-            
-                 <p>  Feel free to reach out using the form below. I will respond as soon as possible. </p>
 
-            
-            
-            
-                 <!-- Contact Form with Validation -->
-            
+            <p>Toby.Koladich@gmail.com</p>
+            <p>Feel free to reach out using the form below. I will respond as soon as possible.</p>
+
+            <!-- Contact Form with Validation -->
             <form>
-
-                <!-- Name Field -->
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name"
-                       required minlength="2" placeholder="Enter your full name">
+                <input type="text" id="name" name="name" required minlength="2" placeholder="Enter your full name">
 
-                <!-- Email Field -->
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email"
-                       required placeholder="example@email.com">
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
 
-                <!-- Subject Field -->
                 <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject"
-                       required>
+                <input type="text" id="subject" name="subject" required>
 
-                <!-- Message Field -->
                 <label for="message">Message:</label>
-                <textarea id="message" name="message"
-                          required minlength="10"></textarea>
+                <textarea id="message" name="message" required minlength="10"></textarea>
 
-                <!-- Submit Button -->
                 <button type="submit">Send Message</button>
-
             </form>
         </section>
-
     </main>
 
-    
     <footer>
         <p>&copy; 2026 Toby Koladich | COMP1002 Portfolio</p>
     </footer>
-
 </body>
 </html>
