@@ -1,0 +1,140 @@
+portfolio-site/
+│
+<!-- index.html -->
+<!-- style.css -->
+<!-- images/ -->
+<!-- profile.jpg -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toby Koladich | Portfolio</title>
+    
+   
+ 
+  
+
+
+        
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- Header & Navigation -->
+    <!-- ========================= -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Internal page links -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========================= -->
+        <!-- ABOUT SECTION -->
+        <!-- ========================= -->
+        <section id="about">
+            <h1>About Me</h1>
+
+            <!-- Profile Image -->
+            <img src="images/profile.jpg" alt="Photo of Toby" width="200">
+
+            <!-- Paragraph About You -->
+            <p>
+                Hello! My name is Toby Koladich. I am currently studying computer programming.
+                I enjoy working with HTML, CSS, C#, and Arduino projects.
+                My goal is to continue building my development skills and
+                become a professional software developer.
+            </p>
+
+            <!-- Skills List -->
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>C# Programming</li>
+                <li>Arduino Development</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <!-- ========================= -->
+        <!-- PROJECTS SECTION -->
+        <!-- ========================= -->
+        <section id="projects">
+            <h1>Projects</h1>
+
+            <p>
+                Below are some of the projects I have worked on during my program:
+            </p>
+
+            <ul>
+                <li>HTML Registration Form</li>
+                <li>C# Planet Surface Area Calculator</li>
+                <li>Arduino Light Sensor System</li>
+            </ul>
+
+            <!-- External Link to GitHub -->
+            <p>
+                Visit my GitHub profile:
+                <a href="https://github.com/YOURUSERNAME" target="_blank">
+                    GitHub Portfolio
+                </a>
+            </p>
+        </section>
+
+        <!-- ========================= -->
+        <!-- CONTACT SECTION -->
+        <!-- ========================= -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+
+            <!-- Contact Form with Validation -->
+            <form>
+
+                <!-- Name Field -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       required minlength="2" placeholder="Enter your full name">
+
+                <!-- Email Field -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       required placeholder="example@email.com">
+
+                <!-- Subject Field -->
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject"
+                       required>
+
+                <!-- Message Field -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"
+                          required minlength="10"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2026 Toby Koladich | COMP1002 Portfolio</p>
+    </footer>
+
+</body>
+</html>
